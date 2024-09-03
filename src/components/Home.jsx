@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, BarChart, Calendar } from "lucide-react"; // Import additional icons
-import "../styling/Home.css" // Import the CSS file
+import "../styling/Home.css" 
+import "../styling/mediaqueries/Home.css"
 
 
 const Home = () => {

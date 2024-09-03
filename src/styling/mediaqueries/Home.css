@@ -105,7 +105,7 @@
   .feature-icon {
     height: 2rem; /* h-8 */
     width: 2rem; /* w-8 */
-    color: #1db954; /* Duolingo green for icons */
+    color: #1E90FF; /* Duolingo green for icons */
     transition: color 0.3s ease; /* Smooth transition for icon color */
   }
   
