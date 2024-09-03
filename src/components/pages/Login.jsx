@@ -3,7 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 // import config from "../config/config";
-
+import "../../styling/pages/Login.css"
 
 
 const Login = () => {
