@@ -1,18 +1,22 @@
-import { Route, Routes } from 'react-router-dom' 
+import { Route, Routes } from "react-router-dom";
 
-import Home from "./components/Home"
 import "./App.css"
+import Home from "./components/Home";
+import Login from "./components/pages/Login";
+import  Userhome from "./components/Userhome"
+
+
 
 function App() {
- 
-
   return (
-     <main>
+    <main className="pb-10">
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/userhome" element={<Userhome />} />
       </Routes>
-     </main>
-  )
+    </main>
+  );
 }
 
-export default App
+export default App;
