@@ -60,10 +60,11 @@ Open the application in your browser: Visit http://localhost:5173 to see the app
 ## Usage
 To use the EmotionRecognition application:
 
-Upload an Audio File: Click on the "Upload" button to select an audio file from your device.
-Analyze Emotion: Click on "Analyze" to process the audio and detect the emotion.
-View Results: The detected emotion will be displayed on the screen.
-Folder Structure
+1. Upload an Audio File: Click on the "Upload" button to select an audio file from your device.
+2. Analyze Emotion: Click on "Analyze" to process the audio and detect the emotion.
+3. View Results: The detected emotion will be displayed on the screen.
+
+## Folder Structure
 The project structure is organized as follows:
 
 ```bash
