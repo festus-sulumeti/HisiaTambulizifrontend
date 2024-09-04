@@ -72,9 +72,9 @@ const Signup = () => {
           <div className="form-group">
             <label htmlFor="password">Verify Password</label>
             <input
-              type="password"
-              name="password"
-              id="password"
+              type="verifypassword"
+              name="verifypassword"
+              id="verifypassword"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
