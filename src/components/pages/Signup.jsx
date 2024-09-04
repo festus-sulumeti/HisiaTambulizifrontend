@@ -16,7 +16,7 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/login", {
+      const response = await fetch("/Signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,7 +43,7 @@ const Signup = () => {
   return (
     <div className="login-container">
       <div className="login-form">
-        <h2>Sign In</h2>
+        <h2>Create account</h2>
         <form onSubmit={handleSignIn}>
           <div className="form-group">
             <label htmlFor="email">Email</label>
@@ -82,7 +82,7 @@ const Signup = () => {
             />
           </div>
           <button type="submit" className="login-button">
-            Create Account
+            Sign up
           </button>
         </form>
         <br />

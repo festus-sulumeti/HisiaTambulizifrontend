@@ -82,6 +82,15 @@ const Login = () => {
             </Link>
           </p>
         </div>
+        <br />
+        <div className="forgot-password-container">
+          <p>
+            No account?{" "}
+            <Link to="/signup" className="forgot-password-link">
+              Sign up
+            </Link>
+          </p>
+        </div>
         <ToastContainer />
       </div>
     </div>
