@@ -70,7 +70,7 @@ const Signup = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="password">Verify Password</label>
+            <label htmlFor="password">confirm Password</label>
             <input
               type="verifypassword"
               name="verifypassword"
