@@ -61,7 +61,7 @@ const ForgotPassword = () => {
         <br />
         <div className="back-to-login">
           <p>
-            <Link to="/parents/login">Back to Login</Link>
+            <Link to="/login">Back to Login</Link>
           </p>
         </div>
         <ToastContainer />
