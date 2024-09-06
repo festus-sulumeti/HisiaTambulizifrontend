@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
-// import "../../styling/pages/ForgotPassword.css";
+import "../../styling/pages/Forgotpassword.css";
 // import "../../styling/mediaqueries/pages/ForgotPassword.css";
 
 const ForgotPassword = () => {
