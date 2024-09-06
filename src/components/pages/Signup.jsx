@@ -86,7 +86,7 @@ const Signup = () => {
           </button>
         </form>
         <br />
-        <div className="forgot-password-container">
+        <div className="forgot-password-containerr">
           <p>
             Have an account?{" "}
             <Link to="/login" className="forgot-password-link">
