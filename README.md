@@ -97,11 +97,11 @@ EmotionRecognition/
 We welcome contributions to the EmotionRecognition project! If you'd like to contribute, please follow these steps:
 
 ## Fork the repository.
-Create a new branch: git checkout -b feature-branch-name.
-Make your changes and commit them: git commit -m 'Add some feature'.
-Push to the branch: git push origin feature-branch-name.
-Submit a pull request.
-Please ensure your code adheres to the project's coding conventions and passes all tests.
+1. Create a new branch: git checkout -b feature-branch-name.
+2. Make your changes and commit them: git commit -m 'Add some feature'.
+3. Push to the branch: git push origin feature-branch-name.
+4. Submit a pull request.
+5. Please ensure your code adheres to the project's coding conventions and passes all tests.
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
