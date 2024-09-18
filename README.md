@@ -80,9 +80,8 @@ EmotionRecognition/
 │   │   │   ├── Signup.jsx        # Component for user signup
 │   │   │   ├── ResetPassword.jsx # Component for resetting password
 │   │   │   └── UserHome.jsx      # Component for the user's home page after login
-│   │   ├── EmotionDetector.jsx   # Main component for emotion detection
-│   │   ├── AudioUploader.jsx     # Component for uploading audio files
-│   │   ├── EmotionResult.jsx     # Component to display results
+│   │   
+│   │  
 │   │
 │   ├── styles/               # CSS styles
 │   │   └── App.css           # Main stylesheet
