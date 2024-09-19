@@ -1,0 +1,76 @@
+
+/* Responsive Design */
+
+/* General mobile styling for screens less than 768px wide */
+@media (max-width: 768px) {
+    .userhome {
+      padding: 10px;
+    }
+  
+    .video-container {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+  
+    .start-button,
+    .stop-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* For smaller mobile devices (less than 480px wide) */
+  @media (max-width: 480px) {
+    .userhome {
+      padding: 5px;
+    }
+  
+    .video-container {
+      width: 90%;
+      height: auto;
+      border-width: 1px;
+    }
+  
+    .start-button,
+    .stop-button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  
+    h1 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+  
+    .loader {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  /* For medium devices like tablets (between 768px and 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .userhome {
+      padding: 20px;
+    }
+  
+    .video-container {
+      width: 80%;
+      height: auto;
+    }
+  
+    .start-button,
+    .stop-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
