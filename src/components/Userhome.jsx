@@ -1,6 +1,5 @@
+import { useState } from 'react';
 import '../styling/Userhome.css'
-import React, { useState } from 'react';
-;
 
 const Userhome = () => {
   // State to control when to display the video feed
