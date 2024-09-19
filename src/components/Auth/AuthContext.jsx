@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom';
 
 const AuthContext = createContext();
 
-// projeect files
-
 export const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const navigate = useNavigate();
