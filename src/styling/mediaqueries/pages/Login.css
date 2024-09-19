@@ -1,179 +1,221 @@
 /* Styling/pages/Login.css */
 
-/* Base styles for larger screens */
 .login-container {
-    background-color: white;
-    width: 430px;
-    margin: 100px auto;
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .login-form {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: left;
-    margin: 0 auto;
-  }
-  
-  .login-form h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .login-form .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  
-  .login-form .form-group label {
-    margin-bottom: 5px;
-    font-size: 16px;
-    color: #555;
-    font-weight: bold;
-    text-align: left;
-  }
-  
-  .login-form .form-group input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    width: 100%;
-  }
-  
-  .login-button {
-    background-color: #1C86EE;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%;
-  }
-  
-  .login-button:hover {
-    background-color: #333;
-  }
-  
-  /* Media queries for responsive design */
-  
-  /* For small screens (phones in portrait mode) */
-  @media screen and (max-width: 480px) {
-    .login-container {
+  background-color: white;
+  width: 430px;
+  margin: 100px auto;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.login-form .form-group label {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #555;
+  font-weight: bold;
+  text-align: left;
+}
+
+.login-form .form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.login-form .password-input-container {
+  position: relative;
+}
+
+.login-form .password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.login-button {
+  background-color: #1C86EE;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #333;
+}
+
+.forgot-password-containerr {
+  text-align: center;
+}
+
+.forgot-password-link {
+  color: #1C86EE;
+  text-decoration: none;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Styling/mediaqueries/pages/Login.css */
+
+/* For small screens (phones in portrait mode) */
+@media screen and (max-width: 480px) {
+  .login-container {
       width: 90%;
       margin: 50px auto;
       padding: 5px;
-    }
-  
-    .login-form {
+  }
+
+  .login-form {
       padding: 20px;
       box-shadow: none; /* Remove shadow to simplify the design on small screens */
-    }
-  
-    .login-form h2 {
+  }
+
+  .login-form h2 {
       font-size: 20px;
       margin-bottom: 15px;
-    }
-  
-    .login-form .form-group input {
-      font-size: 14px;
-      padding: 8px;
-    }
-  
-    .login-button {
-      font-size: 14px;
-      padding: 8px;
-    }
   }
-  
-  /* For medium screens (tablets in portrait mode and smaller laptops) */
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    .login-container {
+
+  .login-form .form-group input {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .login-button {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .login-form .password-toggle-icon {
+      font-size: 14px;
+  }
+}
+
+/* For medium screens (tablets in portrait mode and smaller laptops) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .login-container {
       width: 85%;
       margin: 70px auto;
       padding: 10px;
-    }
-  
-    .login-form {
+  }
+
+  .login-form {
       padding: 30px;
-    }
-  
-    .login-form h2 {
+  }
+
+  .login-form h2 {
       font-size: 22px;
-    }
-  
-    .login-form .form-group input {
+  }
+
+  .login-form .form-group input {
       font-size: 15px;
       padding: 9px;
-    }
-  
-    .login-button {
+  }
+
+  .login-button {
       font-size: 15px;
       padding: 9px 18px;
-    }
   }
-  
-  /* For large screens (desktops and tablets in landscape mode) */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .login-container {
+
+  .login-form .password-toggle-icon {
+      font-size: 15px;
+  }
+}
+
+/* For large screens (desktops and tablets in landscape mode) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .login-container {
       width: 70%;
       margin: 80px auto;
-    }
-  
-    .login-form {
+  }
+
+  .login-form {
       padding: 35px;
-    }
-  
-    .login-form h2 {
+  }
+
+  .login-form h2 {
       font-size: 23px;
-    }
-  
-    .login-form .form-group input {
+  }
+
+  .login-form .form-group input {
       font-size: 15px;
       padding: 10px;
-    }
-  
-    .login-button {
+  }
+
+  .login-button {
       font-size: 15px;
       padding: 10px 20px;
-    }
   }
-  
-  /* For extra large screens (high-resolution desktops) */
-  @media screen and (min-width: 1025px) {
-    .login-container {
+
+  .login-form .password-toggle-icon {
+      font-size: 15px;
+  }
+}
+
+/* For extra large screens (high-resolution desktops) */
+@media screen and (min-width: 1025px) {
+  .login-container {
       width: 430px; /* Keep the original width */
       margin: 100px auto;
-    }
-  
-    .login-form {
+  }
+
+  .login-form {
       padding: 40px;
-    }
-  
-    .login-form h2 {
+  }
+
+  .login-form h2 {
       font-size: 24px;
-    }
-  
-    .login-form .form-group input {
+  }
+
+  .login-form .form-group input {
       font-size: 16px;
       padding: 10px;
-    }
-  
-    .login-button {
+  }
+
+  .login-button {
       font-size: 16px;
       padding: 10px 20px;
-    }
   }
-  
+
+  .login-form .password-toggle-icon {
+      font-size: 16px;
+  }
+}
