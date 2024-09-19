@@ -6,7 +6,7 @@ import Login from "./components/pages/Login";
 import Signup from "./components/pages/Signup";
 import Userhome from "./components/Userhome";
 import Forgotpassword from "./components/pages/Forgotpassword";
-import ProtectedRoute from './components/ProtectedRoute'; // Import ProtectedRoute
+import ProtectedRoute from './components/Auth/ProtectedRoute'; // Import ProtectedRoute
 
 function App() {
   return (

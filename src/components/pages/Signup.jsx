@@ -5,6 +5,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "react-toastify/dist/ReactToastify.css";
 import "../../styling/pages/Login.css";
 import "../../styling/mediaqueries/pages/Login.css";
+import { useAuth } from '../Auth/AuthContext';
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -12,6 +13,7 @@ const Signup = () => {
   const [confirmPassword, setConfirmPassword] = useState(""); 
   const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
   const [showConfirmPassword, setShowConfirmPassword] = useState(false); // State to toggle confirm password visibility
+  const { signup } = useAuth();
   const navigate = useNavigate();
 
   const handleSignIn = async (e) => {
@@ -36,6 +38,7 @@ const Signup = () => {
         toast.success("Successfully signed up", {
           autoClose: 1000,
           onClose: () => {
+            signup();
             navigate("/userhome");
           },
         });

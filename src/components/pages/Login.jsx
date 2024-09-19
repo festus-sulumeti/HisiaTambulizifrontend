@@ -5,12 +5,14 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "react-toastify/dist/ReactToastify.css";
 import "../../styling/pages/Login.css"
 import "../../styling/mediaqueries/pages/Login.css"
+import { useAuth } from '../Auth/AuthContext';
 
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false); 
+  const { login } = useAuth(); // Get login function from context
   const navigate = useNavigate();
 
   const handleSignIn = async (e) => {
@@ -29,6 +31,7 @@ const Login = () => {
         toast.success("Successfully signed in", {
           autoClose: 1000,
           onClose: () => {
+            login(); // Call login function from context
             navigate("/userhome");
           },
         });

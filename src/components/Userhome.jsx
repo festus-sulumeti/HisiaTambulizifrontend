@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import '../styling/Userhome.css';
 import '../styling/mediaqueries/Userhome.css';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
+import { useAuth } from './Auth/AuthContext'; // Import useAuth
 
 const Userhome = () => {
   const [startVideo, setStartVideo] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const { logout } = useAuth(); // Get logout function from context
 
   const handleStartVideo = () => {
     setIsLoading(true);
@@ -21,10 +21,8 @@ const Userhome = () => {
   };
 
   const handleLogout = () => {
-    // Clear user session or authentication data here if necessary
-
-    // Redirect to the home page
-    navigate('/'); // Change this path to your actual home route
+    // Clear user session or authentication data
+    logout(); // Call logout function from context
   };
 
   return (
@@ -38,7 +36,6 @@ const Userhome = () => {
         <div className="loader"></div> 
       ) : (
         <div className="video-container">
-          {/* Display the video feed when startVideo is true */}
           <img src="http://localhost:5000/video_feed" alt="Emotion Detection Feed" />
           <br />
           <button className="stop-button" onClick={handleStopVideo}>
