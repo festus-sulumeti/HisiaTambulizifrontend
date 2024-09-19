@@ -82,3 +82,21 @@ img {
     font-size: 1.5rem;
   }
 }
+
+
+.logout-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #f44336; /* Red color for logout button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.logout-button:hover {
+  background-color: #c62828; /* Darker red on hover */
+}
+

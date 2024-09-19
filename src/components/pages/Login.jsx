@@ -3,7 +3,6 @@ import { ToastContainer, toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa"; 
 import "react-toastify/dist/ReactToastify.css";
-// import config from "../config/config";
 import "../../styling/pages/Login.css"
 import "../../styling/mediaqueries/pages/Login.css"
 
@@ -18,7 +17,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("/login", {
+      const response = await fetch("http://127.0.0.1:5000/signin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

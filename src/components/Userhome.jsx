@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import '../styling/Userhome.css';
 import '../styling/mediaqueries/Userhome.css';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 
 const Userhome = () => {
-  
   const [startVideo, setStartVideo] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleStartVideo = () => {
     setIsLoading(true);
@@ -17,6 +18,13 @@ const Userhome = () => {
 
   const handleStopVideo = () => {
     setStartVideo(false);
+  };
+
+  const handleLogout = () => {
+    // Clear user session or authentication data here if necessary
+
+    // Redirect to the home page
+    navigate('/'); // Change this path to your actual home route
   };
 
   return (
@@ -38,6 +46,10 @@ const Userhome = () => {
           </button>
         </div>
       )}
+      <br />
+      <button className="logout-button" onClick={handleLogout}>
+        Logout
+      </button>
     </div>
   );
 };
