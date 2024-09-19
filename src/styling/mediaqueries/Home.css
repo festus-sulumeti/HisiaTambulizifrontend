@@ -1,216 +1,215 @@
 /* Styling for the main container */
 .home-container {
-    margin: 7rem auto; /* Adjust for larger screens */
-    padding: 0 2rem; /* Add padding for responsiveness */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 1200px; /* Center the content */
+  margin: 7rem auto; /* Adjust for larger screens */
+  padding: 0 2rem; /* Add padding for responsiveness */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 1200px; /* Center the content */
+}
+
+/* Styling for the heading */
+.home-heading {
+  font-size: 3rem; /* Larger size for desktop */
+  font-weight: 700; /* bold */
+  margin-bottom: 1rem; /* spacing below heading */
+}
+
+/* Styling for the span inside the heading */
+.home-heading span {
+  color: #1C86EE; 
+}
+
+/* Styling for the description paragraph */
+.home-description {
+  margin-top: 1rem; /* mt-5 */
+  color: #666666; /* Softer dark gray for better readability */
+  font-size: 1.125rem; /* sm:text-lg for improved readability */
+  max-width: 80%; /* Adjust width for better text alignment */
+}
+
+/* Styling for the buttons container */
+.home-buttons {
+  margin-top: 2rem; /* mt-8 */
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* gap-4 */
+}
+
+/* Common styling for buttons */
+.home-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem; /* size: lg */
+  border-radius: 0.5rem; /* rounded-lg */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: #1E90FF; /* Duolingo green for primary button */
+  color: #ffffff; /* White text color */
+  border: 1px solid transparent; /* Border to ensure consistent size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.home-button:hover {
+  background-color: #1E90FF; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Styling for secondary buttons */
+.home-button.secondary {
+  background-color: #f9fafb; /* Secondary variant (light background) */
+  color: #1E90FF; /* Duolingo green text color for secondary button */
+  border-color: #dcdcdc; /* Border color for secondary variant */
+}
+
+/* Styling for the arrow icon */
+.arrow-icon {
+  margin-left: 0.5rem; /* ml-2 */
+  height: 1.25rem; /* h-5 */
+  width: 1.25rem; /* w-5 */
+}
+
+/* Styling for the features section */
+.home-features {
+  margin-top: 4rem; /* mt-16 */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* gap-8 */
+  justify-content: center;
+}
+
+/* Styling for individual feature items */
+.feature-item {
+  display: flex;
+  align-items: start; /* Align items at the start */
+  gap: 1rem; /* gap-4 */
+  max-width: 25rem; /* max-w-xs */
+  padding: 1rem; /* Add padding */
+  border: 1px solid #e5e5e5; /* Light border for separation */
+  border-radius: 0.5rem; /* rounded-lg */
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for feature items */
+.feature-item:hover {
+  background-color: #f0f9f4; /* Light green background on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Styling for feature icons */
+.feature-icon {
+  height: 2rem; /* h-8 */
+  width: 2rem; /* w-8 */
+  color: #1E90FF; /* Duolingo green for icons */
+  transition: color 0.3s ease; /* Smooth transition for icon color */
+}
+
+/* Hover effect for feature icons */
+.feature-item:hover .feature-icon {
+  color: #1E90FF; /* Darker green for icon on hover */
+}
+
+/* Styling for feature text */
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.feature-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* Semi-bold */
+  color: #333333; /* Dark gray */
+  margin-bottom: 0.5rem; /* Spacing below title */
+}
+
+.feature-description {
+  color: #666666; /* Softer dark gray for readability */
+  font-size: 0.875rem; /* text-sm */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For large screens (Desktops) */
+@media (min-width: 1024px) {
+  .home-container {
+    margin: 10rem auto; /* Increased margin for large screens */
   }
-  
-  /* Styling for the heading */
+
   .home-heading {
-    font-size: 3rem; /* Larger size for desktop */
-    font-weight: 700; /* bold */
-    margin-bottom: 1rem; /* spacing below heading */
+    font-size: 4rem; /* Larger font size for heading */
   }
-  
-  /* Styling for the span inside the heading */
-  .home-heading span {
-    color: #1C86EE; 
-  }
-  
-  /* Styling for the description paragraph */
+
   .home-description {
-    margin-top: 1rem; /* mt-5 */
-    color: #666666; /* Softer dark gray for better readability */
-    font-size: 1.125rem; /* sm:text-lg for improved readability */
-    max-width: 80%; /* Adjust width for better text alignment */
+    font-size: 1.25rem; /* Slightly larger text for readability */
   }
-  
-  /* Styling for the buttons container */
-  .home-buttons {
-    margin-top: 2rem; /* mt-8 */
-    display: flex;
-    align-items: center;
-    gap: 1rem; /* gap-4 */
-  }
-  
-  /* Common styling for buttons */
-  .home-button {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem; /* size: lg */
-    border-radius: 0.5rem; /* rounded-lg */
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    background-color: #1E90FF; /* Duolingo green for primary button */
-    color: #ffffff; /* White text color */
-    border: 1px solid transparent; /* Border to ensure consistent size */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
-  }
-  
-  .home-button:hover {
-    background-color: #1E90FF; /* Darker green on hover */
-    transform: translateY(-2px); /* Slight lift effect */
-  }
-  
-  /* Styling for secondary buttons */
-  .home-button.secondary {
-    background-color: #f9fafb; /* Secondary variant (light background) */
-    color: #1E90FF; /* Duolingo green text color for secondary button */
-    border-color: #dcdcdc; /* Border color for secondary variant */
-  }
-  
-  /* Styling for the arrow icon */
-  .arrow-icon {
-    margin-left: 0.5rem; /* ml-2 */
-    height: 1.25rem; /* h-5 */
-    width: 1.25rem; /* w-5 */
-  }
-  
-  /* Styling for the features section */
+
   .home-features {
-    margin-top: 4rem; /* mt-16 */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem; /* gap-8 */
-    justify-content: center;
+    gap: 3rem; /* Increased gap for features */
   }
-  
-  /* Styling for individual feature items */
+}
+
+/* For medium screens (Tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home-container {
+    padding: 0 1rem; /* Reduced padding for medium screens */
+  }
+
+  .home-heading {
+    font-size: 2.5rem; /* Smaller heading font size */
+  }
+
+  .home-buttons {
+    flex-direction: row; /* Keep buttons in a row */
+  }
+
   .feature-item {
-    display: flex;
-    align-items: start; /* Align items at the start */
-    gap: 1rem; /* gap-4 */
-    max-width: 25rem; /* max-w-xs */
-    padding: 1rem; /* Add padding */
-    border: 1px solid #e5e5e5; /* Light border for separation */
-    border-radius: 0.5rem; /* rounded-lg */
-    background-color: #ffffff; /* White background */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    max-width: 20rem; /* Reduced width for features */
   }
-  
-  /* Hover effect for feature items */
-  .feature-item:hover {
-    background-color: #f0f9f4; /* Light green background on hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* For small screens (Mobile devices) */
+@media (max-width: 767px) {
+  .home-container {
+    margin: 5rem auto; /* Reduced margin for smaller screens */
+    padding: 0 1rem; /* Reduced padding for smaller screens */
   }
-  
-  /* Styling for feature icons */
+
+  .home-heading {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .home-description {
+    font-size: 1rem; /* Smaller text for better readability */
+  }
+
+  .home-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 0.5rem; /* Reduce gap for mobile */
+  }
+
+  .feature-item {
+    flex-direction: column; /* Stack feature icon and text */
+    align-items: center; /* Center align content */
+    text-align: center; /* Center text */
+    max-width: 100%; /* Full width on mobile */
+    padding: 1rem 0.5rem; /* Adjust padding */
+  }
+
   .feature-icon {
-    height: 2rem; /* h-8 */
-    width: 2rem; /* w-8 */
-    color: #1E90FF; /* Duolingo green for icons */
-    transition: color 0.3s ease; /* Smooth transition for icon color */
+    margin-bottom: 0.5rem; /* Add margin below icon */
   }
-  
-  /* Hover effect for feature icons */
-  .feature-item:hover .feature-icon {
-    color: #1E90FF; /* Darker green for icon on hover */
-  }
-  
-  /* Styling for feature text */
-  .feature-text {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-  
+
   .feature-title {
-    font-size: 1.125rem; /* text-lg */
-    font-weight: 600; /* Semi-bold */
-    color: #333333; /* Dark gray */
-    margin-bottom: 0.5rem; /* Spacing below title */
+    font-size: 1rem; /* Smaller font size */
   }
-  
+
   .feature-description {
-    color: #666666; /* Softer dark gray for readability */
-    font-size: 0.875rem; /* text-sm */
+    font-size: 0.875rem; /* Smaller description font size */
   }
-  
-  /* Media Queries for Responsiveness */
-  
-  /* For large screens (Desktops) */
-  @media (min-width: 1024px) {
-    .home-container {
-      margin: 10rem auto; /* Increased margin for large screens */
-    }
-  
-    .home-heading {
-      font-size: 4rem; /* Larger font size for heading */
-    }
-  
-    .home-description {
-      font-size: 1.25rem; /* Slightly larger text for readability */
-    }
-  
-    .home-features {
-      gap: 3rem; /* Increased gap for features */
-    }
-  }
-  
-  /* For medium screens (Tablets) */
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .home-container {
-      padding: 0 1rem; /* Reduced padding for medium screens */
-    }
-  
-    .home-heading {
-      font-size: 2.5rem; /* Smaller heading font size */
-    }
-  
-    .home-buttons {
-      flex-direction: row; /* Keep buttons in a row */
-    }
-  
-    .feature-item {
-      max-width: 20rem; /* Reduced width for features */
-    }
-  }
-  
-  /* For small screens (Mobile devices) */
-  @media (max-width: 767px) {
-    .home-container {
-      margin: 5rem auto; /* Reduced margin for smaller screens */
-      padding: 0 1rem; /* Reduced padding for smaller screens */
-    }
-  
-    .home-heading {
-      font-size: 2rem; /* Smaller font size for mobile */
-    }
-  
-    .home-description {
-      font-size: 1rem; /* Smaller text for better readability */
-    }
-  
-    .home-buttons {
-      flex-direction: column; /* Stack buttons vertically */
-      gap: 0.5rem; /* Reduce gap for mobile */
-    }
-  
-    .feature-item {
-      flex-direction: column; /* Stack feature icon and text */
-      align-items: center; /* Center align content */
-      text-align: center; /* Center text */
-      max-width: 100%; /* Full width on mobile */
-      padding: 1rem 0.5rem; /* Adjust padding */
-    }
-  
-    .feature-icon {
-      margin-bottom: 0.5rem; /* Add margin below icon */
-    }
-  
-    .feature-title {
-      font-size: 1rem; /* Smaller font size */
-    }
-  
-    .feature-description {
-      font-size: 0.875rem; /* Smaller description font size */
-    }
-  }
-  
+}
