@@ -32,6 +32,7 @@ const Userhome = () => {
         <div className="video-container">
           {/* Display the video feed when startVideo is true */}
           <img src="http://localhost:5000/video_feed" alt="Emotion Detection Feed" />
+          <br />
           <button className="stop-button" onClick={handleStopVideo}>
             Stop Video
           </button>
