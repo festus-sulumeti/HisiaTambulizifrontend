@@ -14,7 +14,7 @@ const ForgotPassword = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch("/forgot-password", {
+      const response = await fetch("https://emotionrecognitionbackend.onrender.com/forgot-password", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
