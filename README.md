@@ -16,7 +16,7 @@ Hisia Tambulizi is a web application that uses advanced speech processing techni
 
 ## Project Overview
 
-EmotionRecognition aims to provide an intuitive platform to analyze emotions in speech. Whether used in customer service, mental health monitoring, or entertainment, the application delivers insights into emotional states through audio input.
+The project aims to provide an intuitive platform to analyze emotions in speech. Whether used in customer service, mental health monitoring, or entertainment, the application delivers insights into emotional states through audio input.
 
 ## Features
 
