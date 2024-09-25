@@ -26,7 +26,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await fetch("https://emotionrecognitionbackend.onrender.com/signup", {
+      const response = await fetch("https://hisiatambulizibackend.onrender.com/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
