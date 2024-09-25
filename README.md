@@ -1,6 +1,6 @@
-# EmotionRecognition
+# Hisia Tambulizi
 
-EmotionRecognition is a web application that uses advanced speech processing techniques to detect and analyze emotions from audio recordings of speech. This application is built using ReactJS for the frontend and integrates various tools and technologies for effective emotion recognition.
+Hisia Tambulizi is a web application that uses advanced speech processing techniques to detect and analyze emotions from audio recordings of speech. This application is built using ReactJS for the frontend and integrates various tools and technologies for effective emotion recognition.
 
 ## Table of Contents
 
