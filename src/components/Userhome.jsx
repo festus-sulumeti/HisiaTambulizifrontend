@@ -36,7 +36,7 @@ const Userhome = () => {
         <div className="loader"></div> 
       ) : (
         <div className="video-container">
-          <img src="http://localhost:5000/video_feed" alt="Emotion Detection Feed" />
+          <img src="https://emotionrecognitionbackend.onrender.com/video_feed" alt="Emotion Detection Feed" />
           <br />
           <button className="stop-button" onClick={handleStopVideo}>
             Stop Video
